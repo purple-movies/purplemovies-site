@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>3D Walking Dude Test</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+	<link href="examples.css" type="text/css" rel="stylesheet">
+    
+	<script src="js/swfobject.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        var flashvars = {},params = {
+            menu: "false",
+            allowFullscreen: "true",
+            allowScriptAccess: "always",
+            bgcolor: "#FFFFFF"
+        };
+        swfobject.embedSWF("header_dev.swf", "header", "750px", "210px", 
+        "9.0.0", "expressInstall.swf", flashvars, params, {id:"header"});
+
+        swfobject.embedSWF("arpe_test.swf", "example", "800px", "600px", 
+        "9.0.0", "expressInstall.swf", flashvars, params, {id:"example"});
+    </script>
+	<style>
+        .container{width:884px}
+	</style>
+</head>
+<body>
+    
+    <div class="header"><div id="header"></div></div>
+    <div class="container">
+        <div>
+            <div>
+            <div>
+            <div>
+            <div>
+            <div>
+                <div id="example">
+                </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="desc">
+    Above is a system I was putting together to run adventure games. It's using an ActionScript based 3D engine called Sandy 3D 
+    ( <a href="http://www.flashsandy.org">www.flashsandy.org</a> ).
+    <br/><br/>
+    <b>I put the model/animation together quickly just to demonstrate the system.</b>This system has a way to go before it's complete. Eventually the character will be able to walk around and perform actions on objects and other characters. The character will also be able to move between different scenes. </div>
+</body>
+</html>

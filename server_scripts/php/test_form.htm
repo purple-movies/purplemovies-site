@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title> Test Form </title>
+    </head>
+    <body>
+        <form action='mysql_request.php' method='POST'>
+            
+            server      <input type='text' name='server' value='localhost' />   <br/>
+            user_name   <input type='text' name='user_name' value='root' />     <br/>
+            password    <input type='text' name='password'  value='catman' />   <br/>
+            database    <input type='text' name='database'  value='test' />     <br/>
+            <br/>
+            <input type='text' name='input_string' style='width:1200;' value="INSERT INTO s2s_scores VALUES ( 1, 'BILLY', 2000 )  ||querySplit|| INSERT INTO s2s_scores VALUES ( 1, 'mandy', 2000 )  "/>
+            <br/>
+            <input type='text' name='output_string' style='width:1200;' value="SELECT * FROM s2s_scores ||querySplit|| SELECT * FROM other_table" />
+            <br/>
+            <input type='submit' />
+        </form>
+    
+    </body>
+</html>

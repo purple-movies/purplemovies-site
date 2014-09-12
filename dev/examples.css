@@ -1,0 +1,15 @@
+﻿html, body { height:100%; }
+body { margin:0;color:#551F56;font-family:Arial,Sans-Serif;font-size:12pt; }
+
+.header,.container,.desc
+{margin: 0 auto}
+
+.header{width:750px}
+.container div
+{
+    background:#4D004B;
+    border:1px solid #A97BBC;
+    margin:6px;
+    text-align:center
+}
+.desc{width:850px;padding:10px 0 25px}

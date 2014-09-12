@@ -1,0 +1,89 @@
+<coldML>
+    <cDataBlock id='generic_data' load_mode='SEQUENTIAL'>
+        <library id='clickers' src='../generic_libraries/fl/controls/clickers.swf'>
+            <Button             name_space='fl.controls' />
+            <CrazyAnimation     name_space='com.purplemovies.some_project.animations' />
+            <RadioButtonGroup   name_space='fl.controls' parameters="name" />
+            <RadioButton        name_space='fl.controls' />
+        </library>
+    </cDataBlock>
+    <CDataBlock id='other_data' load_mode='SEQUENTIAL'>
+        <asset type='audio' id='aud_bob' src='audio/stuff.mp3' />
+        <library id='scrollers' src='../generic_libraries/fl/controls/clickers.swf'>
+            <ScrollBar          name_space='fl.controls' parameters="name, height, width" />
+        </library>
+    </CDataBlock>
+
+    <CInstructions>
+        <library id='custom_methods' src='site_methods.swf' />
+        
+        <script src='standard_script.ass' /><!-- *.ass == ActionScript-Script -->
+        <script><![CDATA[
+                main_code_lib.myCrazyFunction(screen_1, bob, cole); 
+                trace("bobo"); 
+                hide(screen_1.next_btn);
+                hide(screen_1.prev_btn); 
+                displayGUI(screen_1); 
+        ]]></script>
+    </CInstructions>
+
+    <cui id='screen_1' transistion='slideLeft'>
+        
+        <String value='My string value' />
+        <!-- 
+            TODO:: setup value attribute in system 
+            TODO:: do catch on set prop and assign primitive values.
+            -->
+        
+        <CDataBlock id='screen_1_assets' load_mode='SEQUENTIAL' 
+            load='  show(screen_1.prev_btn); 
+                    show(screen_1.next_btn); 
+                    hide(screen_1.main_tf);
+                    setProperty( screen_1.bmp_display.bitmapData, screen_1.screen_1_assets.bmp1.content );
+            '>
+                
+            <Asset type='BITMAPDATA' id='bmp1' src='images/still_01.jpg' />
+            <Asset type='BITMAPDATA' id='bmp2' src='images/still_02.jpg' />
+            <Asset type='BITMAPDATA' id='bmp3' src='images/still_03.jpg' />
+            <Asset type='BITMAPDATA' id='bmp4' src='images/still_04.jpg' />
+            <Asset type='BITMAPDATA' id='bmp5' src='images/still_05.jpg' />
+            <Asset type='BITMAPDATA' id='bmp6' src='images/still_06.jpg' />
+            <Asset type='BITMAPDATA' id='bmp7' src='images/still_07.jpg' />
+            <Asset type='BITMAPDATA' id='bmp8' src='images/still_08.jpg' />
+            <Asset type='BITMAPDATA' id='bmp9' src='images/still_09.jpg' />
+            <Asset type='BITMAPDATA' id='bmp10' src='images/still_10.jpg' />
+            <Asset type='BITMAPDATA' id='bmp11' src='images/still_11.jpg' />
+            <Asset type='BITMAPDATA' id='bmp12' src='images/still_12.jpg' />
+            <Asset type='BITMAPDATA' id='bmp13' src='images/still_13.jpg' />
+            <Asset type='BITMAPDATA' id='bmp14' src='images/still_14.jpg' />
+            <Asset type='BITMAPDATA' id='bmp15' src='images/still_15.jpg' />
+            <Asset type='BITMAPDATA' id='bmp16' src='images/still_16.jpg' />
+            <Asset type='BITMAPDATA' id='bmp17' src='images/still_17.jpg' />
+            <Asset type='BITMAPDATA' id='bmp18' src='images/still_18.jpg' />
+            <Asset type='BITMAPDATA' id='bmp19' src='images/still_19.jpg' />
+            <Asset type='BITMAPDATA' id='bmp20' src='images/still_20.jpg' />
+            <Asset type='BITMAPDATA' id='bmp21' src='images/still_21.jpg' />
+            <Asset type='BITMAPDATA' id='bmp22' src='images/still_22.jpg' />
+        </CDataBlock>
+    
+    
+    
+    
+        <Boolean id='test_bool' />
+        <int id='bmp_index' />
+        
+        <bitmap id='bmp_display' />
+        <TEXTFIELD ID='instructions_tf' width='550' height='25' background='true' text='Use the Next and Previous buttons to change the displayed image...' />
+        <TEXTFIELD ID='main_tf' width='550' height='25' background='true' text='Loading images...' />
+        
+        <Button id='prev_btn' x='10' y='370' label='Previous'   click='cycleContent( screen_1.bmp_display.bitmapData, 
+                                                                                    content,
+                                                                                    screen_1.screen_1_assets.assets, 
+                                                                                    -1 );' />
+        <Button id='next_btn' x='110' y='370' label='Next'                    click='cycleContent( screen_1.bmp_display.bitmapData, 
+                                                                                    content,
+                                                                                    screen_1.screen_1_assets.assets, 
+                                                                                    1 );' />
+    </cui>
+
+</coldML>

@@ -1,0 +1,115 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Email ServiceMark</title>
+
+<style type="text/css">
+    body.general{
+        font-family     :arial;
+        font-size       :12pt;
+        color           :#003399;
+    }
+    select.look{
+        font-family     :arial; 
+        font-size       :12pt;
+        color           :#003399;
+        background      :#C3D6FC;
+    }
+    input.look{
+        font-family     :arial; 
+        font-size       :12pt;
+        color           :#003399;
+        background      :#C3D6FC;
+    }
+    textarea.look{
+        font-family             :arial; 
+        font-size               :12pt;
+        color                   :#003399;
+        background              :#C3D6FC;
+        scrollbar-base-color    :#C3D6FC;
+    }
+</style>
+
+</head>
+
+<body class='general'>
+
+<table><tr>
+            <td id='feedback'></td>
+</tr></table><p/>
+
+<form id='email_form' name="email_form" action="mailto.asp" method='post'>
+    <input type='hidden' name='destination' value='srawstron@servicemark.net' />
+
+    <table cellpadding="0" cellspacing="0">
+    
+        <tr>
+            <td><label >Subject: </label></td>
+            <td>
+                <select id="subject" name="subject" style="width:250;" class='look'>
+                    <option value="">                           Select a subject        </option>
+                    <option value="General Information">        General Information     </option>
+                    <option value="Customer Support">           Customer Support        </option>
+                </select> 
+            </td>
+        </tr>
+        
+        <tr>
+            <td><label >Your E-Mail Address: </label></td>
+            <td>
+                <input type="text" id='from' name='from' value="" style="width:250;" class='look'/>
+            </td>
+        </tr>
+        
+        <tr>
+            <td colspan=2><br/><label >Message:</label></td>
+        </tr>
+        <tr>
+            <td colspan=2>
+                <textarea name="message" style='width:600; height:250' class='look'></textarea>	
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td style="text-align:right">
+                <input type="button" value='Send Message' class='look'
+                    onclick='JavaScript:submitEmail();' />
+            </td>
+        </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0">
+    </table>
+
+</form>
+
+
+<script language='javascript'>
+
+    feedback.innerHTML = "Please enter your information and press the 'Send Email' button."
+
+    function submitEmail(){
+        var subject     = document.getElementById('subject');
+        var from        = document.getElementById('from');
+        var feedback    = document.getElementById('feedback');
+        var form        = document.getElementById('email_form');
+        
+        var message = '';
+        if(subject.value!='' && 
+            from.value!=''){
+            
+            form.submit();
+        }else{
+            if(subject.value == '')     message += "- Please select a subject from the drop-down list. <br/>";
+            if(from.value == '')        message += "- Please enter your email address.";
+            
+            feedback.innerHTML = message;
+            feedback.style.color = '#620000';
+        }
+    }
+
+</script>
+
+</body>
+
+</html>

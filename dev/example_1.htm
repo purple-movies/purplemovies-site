@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>ActionScript Physic Engine (APE) Test</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+	<link href="examples.css" type="text/css" rel="stylesheet">
+    
+	<script src="js/swfobject.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        var flashvars = {},params = {
+            menu: "false",
+            allowFullscreen: "true",
+            allowScriptAccess: "always",
+            bgcolor: "#FFFFFF"
+        };
+        swfobject.embedSWF("header_dev.swf", "header", "750", "210", 
+        "9.0.0", "expressInstall.swf", flashvars, params, {id:"header"});
+
+        swfobject.embedSWF("bully.swf", "example", '550', '400', 
+        "9.0.0", "expressInstall.swf", flashvars, params, {id:"example"});
+    </script>
+	<style>
+        .container{width:633px}
+	</style>
+</head>
+<body>
+    
+    <div class="header"><div id="header"></div></div>
+    <div class="container">
+        <div>
+            <div>
+            <div>
+            <div>
+            <div>
+            <div>
+                <div id="example">
+                </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="desc">
+    This is my first real play with APE ( <a href="http://www.cove.org/ape/">http://www.cove.org/ape/</a> ).
+    <br/><br/>
+    As you can see above I've built a simple interaction with lots of random circular particles and forces. I built this as something my girlfriend's two year old nephew can play with instead of IMing random people and changing various system-settings. You can click in the interaction for full-screen mode.
+    </div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+﻿<flash_project name="ModoViewer" version="1">
+    <project_folder name="third_party" expanded="true">
+        <project_file path="./third_party/BustinLib.swc" filetype="swc" />
+    </project_folder>
+    <project_folder name="apps" expanded="true">
+    </project_folder>
+    <project_file path="./IDE_TEST.fla" filetype="fla" profile="" def_file="true" />
+</flash_project>

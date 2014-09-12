@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<game assets_library="assets_lib.swf" target_graphics="SheepGraphics" >
+	
+	<!-- possible game title 'Random Deadly Sheep' -->
+	
+	<level target_number="50" speed=".1" random_anger="0" />
+	<level target_number="18" speed=".3" random_anger="0" />
+	<level target_number="20" speed=".5" random_anger="0" />
+	<level target_number="25" speed=".7" random_anger=".00001" />
+	
+</game>

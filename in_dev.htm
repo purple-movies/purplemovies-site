@@ -1,0 +1,225 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="description" content="3D modeling and Adobe Flash development at PurpleMovies.com" />
+<meta  name="keywords"  content="3d, flash, modeling, web, development, adobe">
+<title>Purple Movies {in} Development</title>
+<script language="javascript">AC_FL_RunContent = 0;</script>
+<script src="AC_RunActiveContent.js" language="javascript"></script>
+<style type="text/css">
+<!--
+body {
+	margin-left:    10px;
+	margin-top:     5px;
+	margin-right:   10px;
+	margin-bottom:  30px;
+        
+        color:          #551F56;
+        font-size:      12pt;
+        font-family:    Arial, Sans-Serif;
+}
+
+a:link, 
+a:visited,
+a:hover,
+a:active        { 
+                color:#551F56; 
+                text-decoration:none; 
+                }
+                
+a:hover         { 
+                color:#CC7ECA;
+                }
+-->
+</style></head>
+<body bgcolor="#EFD3EF">
+<!--url's used in the movie-->
+<!--text used in the movie-->
+<!-- saved from url=(0013)about:internet -->
+<div align="center">
+    
+    <div align="right" style="font-size:7pt">
+    <a href="JavaScript:window.close();">Close window to return to main site</a></div>
+    <br/>
+    <font style="font-size:28pt"><b> PURPLE MOVIES { <i style="font-size:20">in</i> } DEVELOPMENT </b></font>
+    
+    
+    <table width=700 style="margin-top: 30; background-color: #F5E7F5" ><tr><td>
+    <table width=700 style="font-size:12pt; margin:15" >
+        <tr><td>
+    
+    Recently I've been getting into math and spending a fair amount of time developing systems for running games. 
+    I've design/developed these systems so they can be mix-and-matched within a larger Flash application.
+    
+    <br/><br/>
+
+    Below you can see a system in development for running a scrolling shooter game. 
+    <br/><br/>
+    The system is pretty complete, but requires testing and more level data. 
+    I may eventually put a level editor together so the data doesn't require hand coding...</p>
+    
+    <script language="javascript">
+            if (AC_FL_RunContent == 0) {
+                    alert("This page requires AC_RunActiveContent.js.");
+            } else {
+                    AC_FL_RunContent(
+                            'codebase', 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0',
+                            'width', '700',
+                            'height', '525',
+                            'src', 's2s_test',
+                            'quality', 'high',
+                            'pluginspage', 'http://www.macromedia.com/go/getflashplayer',
+                            'align', 'middle',
+                            'play', 'true',
+                            'loop', 'true',
+                            'scale', 'showall',
+                            'wmode', 'window',
+                            'devicefont', 'false',
+                            'id', 'showreel',
+                            'bgcolor', '#ffffff',
+                            'name', 's2s_test',
+                            'menu', 'false',
+                            'allowFullScreen', 'false',
+                            'allowScriptAccess','sameDomain',
+                            'salign', ''
+                            ); //end AC code
+            }
+    </script>
+    <noscript>
+        <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" width="700" height="525" id="showreel" align="middle">
+            <param name="movie" value="s2s_test.swf" />
+            <param name="allowScriptAccess" value="sameDomain" />
+            <param name="allowFullScreen" value="false" />
+            <param name="quality" value="high" />
+            <param name="bgcolor" value="#ffffff" />	
+            <embed src="s2s_test.swf" quality="high" bgcolor="#ffffff" width="700" height="525" name="showreel" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />    
+        </object>
+    </noscript>
+    <br/><br/><br/>
+    </td></tr>
+    
+    <tr><td style="height:1; background-color:#551F56;"></td></tr>
+    <!-- ****************** end of item ************************* -->
+        
+        <tr><td>
+    <br/><p>
+    Below is a small score board example I put together to demonstrate my DBCommunicator class. 
+<br/><br/>
+    This class attempts to error-proof sending multiple SQL commands/queries to a server-side script. 
+        The idea here is to simplify sending/receiving data from Flash by allowing Flash to send SQL commands directly to the server. 
+            At which point my server-side script runs all input queries to update the database and then runs all output queries, 
+                returning the result in XML format.
+<br/><br/>
+    I've written this so the server-side script obtains an array of input/output commands and so is able to update and return 
+        information from multiple tables and queries in one page request to the web-server. 
+            This example is using PHP server-side scripting, as it's the only language my web-server gives access to my database. 
+                I will port the code to ASP, ASP.NET and JSP if the need arises. 
+                    This system is a work in progress and for more serious projects will require some security measures implemented. 
+
+    </p>
+    <div align="center">
+    <script language="javascript">
+            if (AC_FL_RunContent == 0) {
+                    alert("This page requires AC_RunActiveContent.js.");
+            } else {
+                    AC_FL_RunContent(
+                            'codebase', 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0',
+                            'width', '550',
+                            'height', '400',
+                            'src', 'scores_test',
+                            'quality', 'high',
+                            'pluginspage', 'http://www.macromedia.com/go/getflashplayer',
+                            'align', 'middle',
+                            'play', 'true',
+                            'loop', 'true',
+                            'scale', 'showall',
+                            'wmode', 'window',
+                            'devicefont', 'false',
+                            'id', 'showreel',
+                            'bgcolor', '#ffffff',
+                            'name', 's2s_test',
+                            'menu', 'false',
+                            'allowFullScreen', 'false',
+                            'allowScriptAccess','sameDomain',
+                            'salign', ''
+                            ); //end AC code
+            }
+    </script>
+    <noscript>
+        <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" width="550" height="400" id="showreel" align="middle">
+            <param name="movie" value="scores_test.swf" />
+            <param name="allowScriptAccess" value="sameDomain" />
+            <param name="allowFullScreen" value="false" />
+            <param name="quality" value="high" />
+            <param name="bgcolor" value="#ffffff" />	
+            <embed src="scores_test.swf" quality="high" bgcolor="#ffffff" width="550" height="400" name="showreel" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />    
+        </object>
+    </noscript>
+    </div>
+
+
+    <br/><br/><br/>
+    </td></tr>
+    
+    <tr><td style="height:1; background-color:#551F56;"></td></tr>
+    <!-- ****************** end of item ************************* -->
+
+    
+    <tr><td>
+    <p align="left"></br>
+    Below is a system I'm putting together to run an adventure/RP style game. It's using a 
+    Flash based 3D engine called Sandy 3D <br/>( <a href="http://www.flashsandy.org">www.flashsandy.org</a> ).
+    <br/><br/>
+
+    The models animation was put together quickly just to demonstrate the system. 
+        This system has a long way to go before it's complete. Right now there's a small logic 
+    bug in the character's action/animation system and I'm yet to build any functionality 
+    into the abstract object class that the characters will be interacting with. Eventually 
+    the character will be able to walk around and perform actions on objects and other characters. 
+    The character will also be able to move between different scenes. 
+    </p>
+    
+    <script language='javascript'>
+    if (AC_FL_RunContent != 0){
+        
+        AC_FL_RunContent(
+                            'codebase', 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0',
+                            'width', '700',
+                            'height', '525',
+                            'src', 'arpe_test',
+                            'quality', 'high',
+                            'pluginspage', 'http://www.macromedia.com/go/getflashplayer',
+                            'align', 'middle',
+                            'play', 'true',
+                            'loop', 'true',
+                            'scale', 'showall',
+                            'wmode', 'window',
+                            'devicefont', 'false',
+                            'id', 'showreel',
+                            'bgcolor', '#ffffff',
+                            'name', 's2s_test',
+                            'menu', 'false',
+                            'allowFullScreen', 'false',
+                            'allowScriptAccess','sameDomain',
+                            'salign', ''
+                            ); //end AC code
+        
+    }
+    </script>
+    <noscript>
+        <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" width="700" height="525" id="showreel" align="middle">
+            <param name="movie" value="arpe_test.swf" />
+            <param name="allowScriptAccess" value="sameDomain" />
+            <param name="allowFullScreen" value="false" />
+            <param name="quality" value="high" />
+            <param name="bgcolor" value="#ffffff" />	
+            <embed src="arpe_test.swf" quality="high" bgcolor="#ffffff" width="700" height="525" name="showreel" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />    
+        </object>
+    </noscript>
+    
+    </td></tr></table>
+    </td></tr></table>
+  
+</div>
+</body>
+</html>

@@ -1,0 +1,318 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="description" content="3D modeling and Adobe Flash development at PurpleMovies.com" />
+<meta  name="keywords"  content="3d, flash, modeling, web, development, adobe">
+<title>Purple Movies {in} Development</title>
+
+<script language="javascript">writePlayer = 0;</script>
+<script src="write_player.js" language="javascript"></script>
+
+<style type="text/css">
+<!--
+body {
+	margin-left:    10px;
+	margin-top:     5px;
+	margin-right:   10px;
+	margin-bottom:  30px;
+        
+        color:          #551F56;
+        font-size:      12pt;
+        font-family:    Arial, Sans-Serif;
+}
+
+a:link, 
+a:visited,
+a:hover,
+a:active        { 
+                color:#551F56; 
+                text-decoration:none; 
+                }
+                
+a:hover         { 
+                color:#CC7ECA;
+                }
+-->
+</style></head>
+<body bgcolor="#EFD3EF">
+<!--url's used in the movie-->
+<!--text used in the movie-->
+<!-- saved from url=(0013)about:internet -->
+<div align="center">
+    
+    <!-- <div align="right" style="font-size:7pt">
+    <a href="JavaScript:window.close();">Close window to return to main site</a></div> -->
+    <br/>
+    
+
+    <br/>
+    <script language="javascript">
+            if (writePlayer == 0){
+                    alert("This page requires write_player.js.");
+            } else {
+                    writePlayer( 'header_dev', 'header', '750', '210', 'transparent', '#FFFFFF');
+            }
+    </script>
+    
+    
+    <table width=700 style="margin-top: 30; background-color: #F5E7F5" ><tr><td>
+    <table width=700 style="font-size:12pt; margin:15" >
+		
+		    
+    <!-- ************** START OF: APE Demo ************************* -->
+    <tr><td>
+    <b style='font-size:18pt;' > APE Test: </b>
+    
+    <br/>
+    <p align="left">
+This is my first real play with APE ( <a href="http://www.cove.org/ape/">http://www.cove.org/ape/</a> ). I have downloaded the latest version from the code repository (complete with CollisionEvent messages being dispatched) and am inserting some standard ASDoc comments in the source code where things are unclear to me or undocumented ( such as the event dispatching in the AbstractParticle class). I'll probably put the documentation online for anyone who's interested when I feel it is more complete. 
+<br/><br/>
+As you can see below I've built a simple interaction with lots of random circular particles and forces. I also built this into something my girlfriend's two year old nephew can play with. You can click in the interaction for full-screen mode, and when it is switched back to normal mode ( by pressing escape, windows key, ALT+TAB or going to the 'About Adobe Flash Player' page using the context menu ) there's a loud audio clip that plays. 
+<br/><br/>
+I've found a bit of a work-around that'll let me keep full-screen up unless someone closes the application. It will work with a stand-alone Flash Player, but will completely lockup any browser it's used in - so my next step with this would be to put a projector executable together that'll load in a swf that can be changed. I've also thought of using Adobe AIR for these kinds of projects, but with the 15MB download I think it would be best used for distributing a number of games on CD/DVDs that could include the AIR installer. I will probably get into this again when I find some more time to explore building games / interactions for kids and toddlers.
+
+<br/><br/>
+    <b style='font-size:16pt;'>WARNING: Loud audio clip on leaving full-screen mode - please adjust your volume accordingly.</b>
+    </p>
+    
+    <div align="center">
+    
+    <script language="javascript">
+            if (writePlayer == 0){
+                    alert("This page requires write_player.js.");
+            } else {
+                    writePlayer( 'games/Bully_V0_003', 'bully', '550', '400', 'window', '#808080');
+            }
+    </script>
+	
+	</div>
+    
+    
+    <br/><br/><br/>
+    </td></tr>
+
+    <tr><td style="height:1; background-color:#551F56;"></td></tr>
+    <!-- ****************** end of APE Demo ************************* -->
+		
+		
+    <!-- ************** START OF: Framework Demo ************************* -->
+        <tr><td>
+    
+    <br/><br/>
+    <b style='font-size:18pt;' > Dynamic Flash Framework Demo: </b>
+    
+    <br/><br/>
+This is an idea I've been working on to dynamically produce Flash applications/sites <b>without compiling them</b> on a development machine or server-side. This framework <b>could be used</b> in conjunction with an admin tool to allow non-technical users to develop there own Flash-based applications and/or sites. The admin tool could allow the users to drag-'n'-drop controls, TextFields, images, and behaviors. It would then send XML to a server-side script for writing to file. The idea is to have the application / user-interface elements constructed based on a XML file defining the <b>structure</b> and <b>functionality</b> of the application rather than having a ridged compiled application.
+    <br/><br/><b style='font-size:14pt;' >
+    Or in other words take XML such as this:</b></p>
+    
+    
+    <script language="javascript">
+            if (writePlayer == 0){
+                    alert("This page requires write_player.js.");
+            } else {
+                    writePlayer( 'xml_example', 'xml', '550', '400', 'window', '#FFFFFF');
+            }
+    </script>
+
+
+    <br/><br/><b style='font-size:14pt;' >
+    And produce an application such as this:</b></p>
+    
+    <div align="center">
+        
+    
+    <script language="javascript">
+            if (writePlayer == 0){
+                    alert("This page requires write_player.js.");
+            } else {
+                    writePlayer( 'framework_test', 'framework', '550', '400', 'window', '#FFFFFF');
+            }
+    </script>
+        
+</div>
+<br/><br/>
+This is a working example of the system in it's current state - the code's still under development - it needs optimizing and sanity checking. 
+<br/><br/>
+My next step on this project is to write <b>documentation</b> and edit the <b>activity diagrams</b> I drew up during the design phase. This will not only help other people understand what I've been doing, but will also help me see where things need work.
+
+
+    <br/><br/><br/>
+    </td></tr>
+    
+    <tr><td style="height:1; background-color:#551F56;"></td></tr>
+    <!-- ****************** end of Framework Demo ************************* -->
+    
+        
+    <!-- ************** START OF: 3D Character Demo ************************* -->
+    <tr><td>
+    <br/><br/>
+    <b style='font-size:18pt;' > Adventure Game System Demo: </b>
+    
+    <br/><br/>
+    <p align="left">
+    Below is a system I'm putting together to run an adventure game. It's using a 
+    Flash based 3D engine called Sandy 3D ( <a href="http://www.flashsandy.org">www.flashsandy.org</a> ).
+    <br/><br/>
+
+    <b>I put the model/animation together quickly just to demonstrate the system.</b> 
+        This system has a <b><i>long way to go before it's complete.</i></b> Right now there's a small logic 
+    <b>bug</b> in the character's action/animation system and I'm yet to build any functionality 
+    into the abstract object class that the characters will be interacting with. Eventually 
+    the character will be able to walk around and perform actions on objects and other characters. 
+    The character will also be able to move between different scenes. 
+    </p>
+    
+    
+    
+    <script language="javascript">
+            if (writePlayer == 0){
+                    alert("This page requires write_player.js.");
+            } else {
+                    writePlayer( 'arpe_test', 'arpe', '700', '525', 'window', '#FFFFFF');
+            }
+    </script>
+    
+    
+    <br/><br/><br/>
+    </td></tr>
+
+    <tr><td style="height:1; background-color:#551F56;"></td></tr>
+    <!-- ****************** end of Character Demo ************************* -->
+    
+        
+        
+    <!-- ************** START OF: STARFIELD PROTOTYPE ************************* -->
+    <tr><td>
+    <br/><br/>
+    <b style='font-size:18pt;' > Star-Field Prototype: </b>
+    
+    <br/><br/>
+    <p align="left">
+    
+    I put this together mostly for building a space-shooter game. This is in a prototype stage and needs building into a display-object type class. This class's constructor will accept parameters as to the color variation of the stars, star size, number of star layers, total number of stars, and obviously height/width properties.
+    
+    </p>
+    
+    <script language="javascript">
+            if (writePlayer == 0){
+                    alert("This page requires write_player.js.");
+            } else {
+                    writePlayer( 'star_field', 'star_field', '670', '500', 'window', '#FFFFFF');
+            }
+    </script>
+    
+    
+    <br/><br/><br/>
+    </td></tr>
+
+    <tr><td style="height:1; background-color:#551F56;"></td></tr>
+    <!-- ****************** end of STARFIELD PROTOTYPE ************************* -->
+    
+    <!-- ************** START OF: Shooter Demo ************************* -->
+    <tr><td>
+    <br/><br/>
+    
+    <b style='font-size:18pt;' > Scrolling Shooter System Demo: </b>
+    
+    <br/><br/>
+
+    Below you can see a system in development for running a scrolling shooter game. 
+    <br/><br/>
+    The system is pretty complete, but requires testing and more level data. 
+    I may eventually put a level editor together so the data doesn't require hand coding...
+        
+    <br/><br/>
+        <b>Click the start button - then uses the arrow keys and the space bar.</b></p>
+    
+    
+    <script language="javascript">
+            if (writePlayer == 0){
+                    alert("This page requires write_player.js.");
+            } else {
+                    writePlayer( 's2s_test', 's2s', '700', '525', 'window', '#FFFFFF');
+            }
+    </script>
+
+    <br/><br/><br/>
+    </td></tr>
+    
+    <tr><td style="height:1; background-color:#551F56;"></td></tr>
+    <!-- ****************** end of SHOOTER ************************* -->
+        
+    <!-- ************** START OF: PAGE FLIP PROTOTYPE ************************* -->
+    <tr><td>
+    <br/><br/>
+    <b style='font-size:18pt;' > Half-Finished Page-Flip Effect Prototype: </b>
+    
+    <br/><br/>
+    <p align="left">
+    
+    Someone who wanted a dynamic online-catalog with the notorious page-flip effect interviewed me. This is how far I got with the angle-finding math before the interview... I hadn't time to implement the shading, constrain the page or bind it to the catalog's spine. After a while of observing someone else's page-flip application and drawing a number of diagrams, I figured out what angles I had to find and what it needs to do when it hits the spine of the catalog. However when it hits the spine it does something slightly different which I hadn't time to put in. I will get around to finishing this and build it into nicely written classes when I can find the time...
+    
+    </p>
+    
+    <script language="javascript">
+            if (writePlayer == 0){
+                    alert("This page requires write_player.js.");
+            } else {
+                    writePlayer( 'flipper', 'flipper', '800', '600', 'window', '#FFFFFF');
+            }
+    </script>
+    
+    
+    <br/><br/><br/>
+    </td></tr>
+
+    <tr><td style="height:1; background-color:#551F56;"></td></tr>
+    <!-- ****************** end of PAGE FLIP PROTOTYPE ************************* -->
+        
+    <!-- ************** START OF: DB Demo ************************* -->
+        <tr><td>
+          
+    <br/><br/>  
+            
+    <b style='font-size:18pt;' > DBCommunicator Class / Server-Side Script Demo: </b>
+    
+    <br/><br/>
+         <p>
+    Below is a small score board example I put together to demonstrate my DBCommunicator class. 
+<br/><br/>
+    This class attempts to <b>error-proof</b> sending <b>multiple</b> SQL commands/queries to a server-side script. 
+        The idea here is to simplify sending/receiving data from Flash by allowing <b>Flash to send SQL</b> commands directly to the server. 
+            At which point my server-side script runs all <b>input queries</b> to update the database and then runs all <b>output queries</b>, 
+                returning the result in <b>XML format</b>.
+<br/><br/>
+    I've written this so the server-side script obtains an array of input/output commands and so is able to update and return 
+        information from <b>multiple tables and queries in one page request</b> to the web-server. 
+            This example is using PHP server-side scripting.  
+                I can port the code to ASP, ASP.NET and JSP if the need arises. 
+                    This system is a <b>work in progress</b> and for more serious projects will require some <b>security</b> measures implemented. 
+
+    </p>
+    <div align="center">
+    
+    
+    
+    <script language="javascript">
+            if (writePlayer == 0){
+                    alert("This page requires write_player.js.");
+            } else {
+                    writePlayer( 'scores_test', 'scores', '550', '400', 'window', '#FFFFFF');
+            }
+    </script>
+    
+    </div>
+
+
+    <br/><br/><br/>
+    </td></tr>
+    
+    <!-- ****************** end of item ************************* -->
+        
+    </table>
+    </td></tr></table>
+  
+</div>
+</body>
+</html>
