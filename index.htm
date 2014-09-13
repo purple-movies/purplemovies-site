@@ -8,7 +8,7 @@
 <script language="javascript"> AC_FL_RunContent = 0; </script>
 <script language="javascript"> DetectFlashVer = 0; </script>
 <script src="AC_RunActiveContent.js" language="javascript"></script>
-<style type="text/css">
+<style type="text/css" media="screen, print">
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -52,47 +52,70 @@ q:before, q:after {
 table { border-collapse: collapse; border-spacing: 0; }
 
 /* CUSTOM */
-h1, span{ padding: 8px 0;}
+/** { padding: 16px 0;}*/
 h1{ padding: 12px 0 ; font-size: 20px; font-weight: bold; }
 body{ width: 900px; margin: 20px auto; background: #EFEFEF }
+body>*{ margin-left: 20px; margin-right: 20px; }
 *{ overflow: hidden}
 
-#skills>*{
+h1, h2, h3 { color: #4D004B; padding: 12px 0 }
+h1 { padding-top: 40px }
+h2 { padding-top: 24px }
+
+/*#skills>*{
     cursor: pointer;
 
-    /* For Safari 3.1 to 6.0 */
-    -webkit-transition-property: height;
-    -webkit-transition-duration: 1s;
-    -webkit-transition-timing-function: linear;
-    -webkit-transition-delay: 2s;
-    /* Standard syntax */
-    transition-property: height;
-    transition-duration: 1s;;
-    transition-timing-function: linear;
-    transition-delay: 2s
+}*/
+#skills>div>p {
+    /*display: block;*/
+    /*height: 0;*/
 
+    /* For Safari 3.1 to 6.0 */
+    /*-webkit-transition-property: height;*/
+    /*-webkit-transition-duration: 1s;*/
+    /*-webkit-transition-timing-function: linear;*/
+    /*-webkit-transition-delay: 2s;*/
+    /* Standard syntax */
+    /*transition-property: height;*/
+    /*transition-duration: 1s;;*/
+    /*transition-timing-function: linear;*/
+    /*transition-delay: 2s*/
+
+    /*-webkit-transition: height 2s; *//* For Safari 3.1 to 6.0 */
+    /*transition: height 2s;*/
 }
-#skills>div>p, #skills>div:hover>p{
-}
-#skills>div>p{
-    height: 0;
+#skills>div:hover>p{
+    height: 100px;
 }
 #skills>div:hover>p{height: auto}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+</style>
+
+<style type="text/css" media="print">
+    #oldLink{ display: none }
+    #employment { page-break-after: always; }
 </style>
 </head>
 
 <body>
-<div><span>Ash Rawstron</span> <a>ash@purplemovies.com</a> <span>816 797 6071</span> <span>Pacifica, CA</span></div>
-
+<div class="left"><span>Ash Rawstron</span> <a>ash@purplemovies.com</a></div> <div class="right"> <span>816 797 6071</span> <span>Pacifica, CA</span></div>
+<br>
 <h1>Experience</h1>
 <div id="skills">
     <div><h2>Golang</h2><p>>1 year working with Google's Go Language on Edmodo back-end Thrift services.</p></div>
     <div><h2>PHP</h2><p>~5 years working with PHP on features and RESTful APIs.</p></div>
     <div><h2>Javascript</h2><p>~5 years working with object-oriented Javascript on user-interface.</p></div>
     <div><h2>Ruby on Rails</h2><p>I've had some experience working with Ruby and the Rails framework over the past year.
-        I'm comfortable working with our rails project and understand how to work with Rails MVC structure.</p></div>
+        I'm comfortable working with our rails project and understand how to work with how the MVC structure is implemented in the Rails framework.</p></div>
     <div><h2>C#</h2><p>~3 years personal experience using C# with Unity3d engine.</p></div>
-    <div><h2>Unity 3D</h2><p>Over the past 3-4 years I've spent much of my spare time experimenting with different features of Unity 3D.</p></div>
+    <div><h2>Unity 3D</h2><p>Over the past 3-4 years I've spent much of my spare time experimenting with different features of Unity.</p></div>
     <div><h2>Blender3D, Maya, 3DS Max, & 3D Studio</h2><p>Since ~1996 I've been interested in 3D software and have experience using the software mentioned here.</p></div>
 </div>
 
@@ -144,7 +167,7 @@ body{ width: 900px; margin: 20px auto; background: #EFEFEF }
     </p>
 </div>
 
-<a href="old_index.htm">Older Work</a>
+<a id="oldLink" href="old_index.htm">Older Work</a>
 
 <noscript>
       <p align='center'>
