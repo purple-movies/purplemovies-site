@@ -39,7 +39,8 @@ body {
     line-height: 1;
 }
 ol, ul {
-    list-style: none;
+    margin: 10px 0;
+    list-style: square;
 }
 blockquote, q {
     quotes: none;
@@ -52,20 +53,22 @@ q:before, q:after {
 table { border-collapse: collapse; border-spacing: 0; }
 
 /* CUSTOM */
-/** { padding: 16px 0;}*/
-h1{ padding: 12px 0 ; font-size: 20px; font-weight: bold; }
-body{ width: 900px; margin: 20px auto; background: #EFEFEF }
-body>*{ margin-left: 20px; margin-right: 20px; }
-*{ overflow: hidden}
+h1{ padding: 12px 0 ; font-size: 20px; font-weight: bold }
+body{ overflow-y: scroll }
 
-h1, h2, h3 { color: #4D004B; padding: 12px 0 }
+#doc-body{ width: 900px; margin: 20px auto; background: #EFEFEF }
+#doc-body>*{ margin-left: 20px; margin-right: 20px; }
+/**{ overflow: hidden }*/
+
+h1, h2, h3 { color: #4D004B; padding: 12px 0;
+    clear: none; }
 h1 { padding-top: 40px }
-h2 { padding-top: 24px }
+h2, h3 { padding-top: 24px; }
+h3 { color: rgba(120, 71, 143, 0.98) }
 
-/*#skills>*{
-    cursor: pointer;
+ul { list-style-type: square }
 
-}*/
+
 #skills>div>p {
     /*display: block;*/
     /*height: 0;*/
@@ -89,15 +92,18 @@ h2 { padding-top: 24px }
 }
 #skills>div:hover>p{height: auto}
 
-.right {
-    float: right;
-}
-
-.left {
+#employment>*{
+    clear: none;
     float: left;
+    width: auto;
 }
-</style>
+#employment>h2{ float: left }
+#employment>p{ float: left }
 
+.right { float: right }
+.left { float: left }
+
+</style>
 <style type="text/css" media="print">
     #oldLink{ display: none }
     #employment { page-break-after: always; }
@@ -105,77 +111,95 @@ h2 { padding-top: 24px }
 </head>
 
 <body>
-<div class="left"><span>Ash Rawstron</span> <a>ash@purplemovies.com</a></div> <div class="right"> <span>816 797 6071</span> <span>Pacifica, CA</span></div>
-<br>
-<h1>Experience</h1>
-<div id="skills">
-    <div><h2>Golang</h2><p>>1 year working with Google's Go Language on Edmodo back-end Thrift services.</p></div>
-    <div><h2>PHP</h2><p>~5 years working with PHP on features and RESTful APIs.</p></div>
-    <div><h2>Javascript</h2><p>~5 years working with object-oriented Javascript on user-interface.</p></div>
-    <div><h2>Ruby on Rails</h2><p>I've had some experience working with Ruby and the Rails framework over the past year.
-        I'm comfortable working with our rails project and understand how to work with how the MVC structure is implemented in the Rails framework.</p></div>
-    <div><h2>C#</h2><p>~3 years personal experience using C# with Unity3d engine.</p></div>
-    <div><h2>Unity 3D</h2><p>Over the past 3-4 years I've spent much of my spare time experimenting with different features of Unity.</p></div>
-    <div><h2>Blender3D, Maya, 3DS Max, & 3D Studio</h2><p>Since ~1996 I've been interested in 3D software and have experience using the software mentioned here.</p></div>
-</div>
+<div id="doc-body">
 
-<h1>Employment</h1>
-<div id="employment">
-   <div>
-       Edmodo.com (Fusion Project Inc.) Mountain View, CA ~ Web Developer ~ March 2009 ? Present
-       Edmodo is an online social learning platform for teachers and students that receives over 35,000 daily visits. As the only
-       full-time front-end developer, I pioneered the use of a class-based JS library allowing us to more easily organize and
-       reuse code. I also developed the Edmodo document-viewer written in AS3.
-   </div>
-    <div>
-        Saffron Interactive London, UK ~ Multimedia Developer ~ April 2002 ? October 2005
-        ? ActionScript, ASP/VB Script, JavaScript & Director-Lingo development
-        ? 3D modeling, texturing, animation & rendering
-        ? Design of educational interactions & diagrams
-        ? HTML/CSS & Flash layout
-        ? Client interaction
-        Projects
-        Hilton Hotels - Web Site Content Management Training, Siemens PG ? Turbine Inspection Guide,
-        Lord Chancellor?s Department / Central Office of Information - Document Management System Guide,
-        British Telecom (BT) ? Health & Safety, T-Mobile ? Employee Orientation, Cemex - (cement-info), DHL - Preparing for
-        Interviews Training Course, Britannia Royal Naval College ? 3D Marketing Demo, BT - Indirect Channels 2, Sales Training
-        Tool, BT - Customer Satisfaction Training Module, BT - Line Managers Guide, Churchill - 3D e-Learning Interface Demo,
-        BT ? Evolve, BT ? Way, BT ? TAS, Ladbrokes - Racing Start, Induction program, Liberator - 3D Marketing Demo
+    <div class="left"><span>Ash Rawstron</span> <a>ash.rawstron@gmail.com</a></div> <div class="right"> <span>816 797 6071</span> <span>Pacifica, CA</span></div>
+    <br>
+
+    <h1>Achievements</h1>
+    <div id="achievements">
+        <ul>
+            <li>Mastered HTML</li>
+            <li>Mastered CSS</li>
+            <li>Mastered OOP with Javascript</li>
+            <li>Mastered OOP with PHP</li>
+            <li>Mastered GO !!!!! GoLang</li>
+            <li>Dealt with Ruby</li>
+            <li>Joined the Android Team</li>
+            <li>Lead Unity3D workshop 101</li>
+            <li>Became a Wii U developer (Unity Pro License provided)</li>
+            <li>Setup to maintain the Edmodo's Win8 application</li>
+        </ul>
     </div>
-    <div>
-        Saffron Interactive London, UK ~ Multimedia Developer ~ April 2002 ? October 2005
-        ? ActionScript, ASP/VB Script, JavaScript & Director-Lingo development
-        ? 3D modeling, texturing, animation & rendering
-        ? Design of educational interactions & diagrams
-        ? HTML/CSS & Flash layout
-        ? Client interaction
-        Projects
-        Hilton Hotels - Web Site Content Management Training, Siemens PG ? Turbine Inspection Guide,
-        Lord Chancellor?s Department / Central Office of Information - Document Management System Guide,
-        British Telecom (BT) ? Health & Safety, T-Mobile ? Employee Orientation, Cemex - (cement-info), DHL - Preparing for
-        Interviews Training Course, Britannia Royal Naval College ? 3D Marketing Demo, BT - Indirect Channels 2, Sales Training
-        Tool, BT - Customer Satisfaction Training Module, BT - Line Managers Guide, Churchill - 3D e-Learning Interface Demo,
-        BT ? Evolve, BT ? Way, BT ? TAS, Ladbrokes - Racing Start, Induction program, Liberator - 3D Marketing Demo
+
+    <h1>Experience</h1>
+    <div id="skills">
+        <div><h2>Golang</h2><p>>1 year working with Google's Go Language on Edmodo back-end Thrift services.</p></div>
+        <div><h2>PHP</h2><p>~5 years working with PHP on features and RESTful APIs.</p></div>
+        <div><h2>Javascript</h2><p>~5 years working with object-oriented Javascript on user-interface.</p></div>
+        <div><h2>Ruby on Rails</h2><p>I've had some experience working with Ruby and the Rails framework over the past year.
+            I'm comfortable working with our rails project and understand how to work with how the MVC structure is implemented in the Rails framework.</p></div>
+        <div><h2>C#</h2><p>~3 years personal experience using C# with Unity3d engine.</p></div>
+        <div><h2>Unity 3D</h2><p>Over the past 3-4 years I've spent much of my spare time experimenting with different features of Unity.</p></div>
+        <div><h2>Blender3D, Maya, 3DS Max, & 3D Studio</h2><p>Since ~1996 I've been interested in 3D software and have experience using the software mentioned here.</p></div>
     </div>
-</div>
 
-<h1>Education</h1>
-<div id="education">
-    <p><strong>ANGLIA POLYTECHNIC UNIVERSITY (1998-2001) - Essex, England ~</strong> BSc (Honors) Multimedia Systems 2:1</p>
-    <p><strong>Personal Education: ACADEMY OF ART UNIVERSITY (2007-2008) - San Francisco, USA ~</strong> Personal Enrichment Classes:
-        Organic Modeling, Intermediate Figure Drawing, Basic Figure Drawing, Figure Modeling, Maya 1, Analysis of Form
-    </p>
-</div>
+    <h1>Employment</h1>
+    <div id="employment">
+        <div>
+            <h2 class="left">Edmodo.com</h2><h3 class="left"> (Fusion Project Inc.) Mountain View, CA ~ Web Developer ~ March 2009 - Present</h3>
+            <p class="left">Edmodo is an online social learning platform for teachers and students that receives over 35,000 daily visits. As the only
+                full-time front-end developer, I pioneered the use of a class-based JS library allowing us to more easily organize and
+                reuse code. I also developed the Edmodo document-viewer written in AS3.</p>
+        </div>
+        <br>
 
-<a id="oldLink" href="old_index.htm">Older Work</a>
+        <div>
+            <h2 class="left">Saffron Interactive</h2><h3 class="left">&nbsp;&nbsp;London, UK ~ Multimedia Developer ~ April 2002 - October 2005</h3>
+            <p class="left">
+                ActionScript, ASP/VB Script, JavaScript & Director-Lingo development
+                3D modeling, texturing, animation & rendering
+                Design of educational interactions & diagrams
+                HTML/CSS & Flash layout
+                Client interaction
 
-<noscript>
-      <p align='center'>
-            This is being displayed because your browser does not support JavaScript.
-                </br>If you are experiencing problems with this site please try enabling JavaScript and 
-                <a href='http://www.purplemovies.com'>refreshing</a> the page.
+                Projects
+                Hilton Hotels - Web Site Content Management Training, Siemens PG - Turbine Inspection Guide,
+                Lord Chancellor's Department / Central Office of Information - Document Management System Guide,
+                British Telecom (BT) - Health & Safety, T-Mobile - Employee Orientation, Cemex - (cement-info), DHL - Preparing for
+                Interviews Training Course, Britannia Royal Naval College - 3D Marketing Demo, BT - Indirect Channels 2, Sales Training
+                Tool, BT - Customer Satisfaction Training Module, BT - Line Managers Guide, Churchill - 3D e-Learning Interface Demo,
+                BT - Evolve, BT - Way, BT - TAS, Ladbrokes - Racing Start, Induction program, Liberator - 3D Marketing Demo
+            </p>
+        </div>
+        <br>
+
+        <div>
+            <h2 class="left">Colourmation Media Ltd</h2><h3 class="left">&nbsp;Kingston, UK ~ Multimedia/Web Developer ~ June 1997 - March 2002</h3>
+            <ul class="left">
+                <li>ActionScript, ASP/VB Script, JavaScript & Director-Lingo development</li>
+                <li>3D modeling, texturing, animation & rendering</li>
+                <li>HTML/CSS</li>
+            </ul>
+            <p class="left">
+                Projects
+                KBR / Halliburton ? Varris Deep-Sea Pump Animations, British Petroleum (BP) ETAP Intranet Site, BP Emergency
+                Procedure Intranet Site, Shell ETAP promotional animation, Shell ETAP information CD-ROM, BP in Algeria - Public Relations
+                Site, Kerr McGee Janice Field Development Site Information Poster
+            </p>
+        </div>
+    </div>
+
+    <h1>Education</h1>
+    <div id="education">
+        <p><strong>ANGLIA POLYTECHNIC UNIVERSITY (1998-2001) - Essex, England ~</strong> BSc (Honors) Multimedia Systems 2:1</p>
+        <p><strong>Personal Education: ACADEMY OF ART UNIVERSITY (2007-2008) - San Francisco, USA ~</strong> Personal Enrichment Classes:
+            Organic Modeling, Intermediate Figure Drawing, Basic Figure Drawing, Figure Modeling, Maya 1, Analysis of Form
         </p>
-</noscript>
+    </div>
+
+    <a id="oldLink" href="old_index.htm">Older Work</a>
+</div>
 </body>
 </html>
 
